@@ -7,7 +7,8 @@ var gulp = require('gulp'),
   cssnano = require('cssnano'),
   lost = require('lost'),
   fonts = require('postcss-font-magician'),
-  normalize = require('postcss-normalize');
+  normalize = require('postcss-normalize'),
+  tinypng = require('gulp-tinypng');
 
 
   var config = {
@@ -16,6 +17,12 @@ var gulp = require('gulp'),
 
   }
 
+gulp.task('tinypng', function(){
+  gulp.src(config.source + 'images/*.jpg')
+    .pipe(tinypng('_GhcuLMWJrfeSNTogaPWVDNVk_OFyYrU'))
+    .pipe(gulp.dest(config.dest + 'images/'))
+
+  });
   	gulp.task('html', function() {
   		gulp.src(config.source + '*.html')
   		.pipe(gulp.dest(config.dest));
@@ -39,6 +46,8 @@ var gulp = require('gulp'),
   gulp.task('watch', function() {
   gulp.watch(config.source + 'css/*.css', ['css']);
   gulp.watch(config.source + '*.html', ['html']);
+  gulp.watch(config.source + 'images/*.jpg', ['tinypng']);
+
 });
 
 gulp.task('webserver', function() {

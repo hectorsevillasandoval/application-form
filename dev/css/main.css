@@ -1,0 +1,50 @@
+@import 'reset';
+@import 'helpers';
+@import 'variables';
+
+*{
+	box-sizing:border-box;
+}
+h1,h2,h3,h4,h5,h6,img, figure{
+	margin:0;
+	padding:0;
+}
+body{
+	box-sizing:border-box;
+	font-family: 'Open Sans';
+	font-weight: normal; 
+}
+
+header{
+	background-image: url("../images/banner.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding:0 0 2rem 0;
+	text-align: center;
+	background-position: top center;
+	figure{
+		background-color:white;
+		display:inline-block;
+		padding:2.5rem;
+		border-radius:0 0 50% 50%;
+	}
+	h1{
+		color:white;
+		text-shadow: 3px 4px 5px rgba(0,0,0,.25);
+		font-weight: bold;
+		margin-top: 2.5rem;
+		margin-bottom: 2.8rem;
+	}
+}
+
+/* Main Section */
+.main{
+	padding:1rem;
+	h3{
+		color: $blue-color;
+		font-weight: 400;
+		margin-top:1rem;
+		margin-bottom: 1rem;
+	}
+}
