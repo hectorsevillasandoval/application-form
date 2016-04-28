@@ -1,0 +1,33 @@
+{
+  "name": "ApplicationForm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barcadictni/application-form.git"
+  },
+  "author": "Hector Sevilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barcadictni/application-form/issues"
+  },
+  "homepage": "https://github.com/barcadictni/application-form#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.5.2",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1",
+    "lost": "^6.7.2",
+    "postcss-font-awesome": "^0.2.1",
+    "postcss-font-magician": "^1.4.0",
+    "postcss-normalize": "^0.2.0",
+    "precss": "^1.4.0"
+  }
+}
