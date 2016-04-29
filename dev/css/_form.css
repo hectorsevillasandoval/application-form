@@ -1,0 +1,77 @@
+#application{
+	input[type="text"], input[type="password"], input[type="tel"], textarea{
+		background-color: rgba(255, 255, 255, 0.5);
+		border:1px solid gray;
+		display:inline-block;
+		width:100%;
+		margin:.5rem 0;
+		padding: .5rem;
+		color:$blue-color;
+
+	}
+	label{
+		color:$blue-color;
+		padding-right: 1rem;
+	}
+	input[type="radio"]{
+		border:1px solid gray;
+		margin-left: .5rem;
+	}
+	.input-field{
+		margin-top: .7rem;
+	}
+	.date{
+		text-align: right;
+		input{
+			max-width:40%;
+			padding-left: 1%;
+		}
+	}
+	.advice{
+		p{
+			color: $red-color;
+			font-size: 1.2rem;
+		}
+	}
+	h3{
+		font-weight: bold;
+		span{
+			background-color: #f7941d;
+			border-radius:50%;
+			padding:.3rem .8rem;
+			color:white;
+		}
+	}
+	.submit{
+		text-align: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		background-color: $blue-color;
+		padding-top: 2rem;
+		padding-bottom: @padding-top;
+		margin-top: 2rem;
+		input[type="submit"]{
+			background-color: $orange-color;
+			border:0;
+			color:white;
+			padding:.8rem 2.2rem;
+			text-transform: uppercase;
+			font-size:1.5rem;
+			font-weight: 300;
+			letter-spacing:2px;
+		}
+		
+	}
+}
+
+@media $medium{
+	#application{
+		.two-columns {
+			lost-utility:clearfix;
+			& > div{
+				lost-column: 1/2;	
+			}
+			
+		}
+	}
+}
